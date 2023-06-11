@@ -87,7 +87,7 @@ def qrCallback(uuid, status, qrcode):
         qr_api2 = "https://api.qrserver.com/v1/create-qr-code/?size=400×400&data={}".format(url)
         qr_api3 = "https://api.pwmqr.com/qrcode/create/?url={}".format(url)
         qr_api4 = "https://my.tv.sohu.com/user/a/wvideo/getQRCode.do?text={}".format(url)
-        print("You can also scan QRCode in any website below:")
+        print("You can also scan QRCode in any website below:22222222")
         print(qr_api3)
         print(qr_api4)
         print(qr_api2)
