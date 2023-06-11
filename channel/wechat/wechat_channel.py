@@ -97,6 +97,16 @@ def qrCallback(uuid, status, qrcode):
         qr.add_data(url)
         qr.make(fit=True)
         qr.print_ascii(invert=True)
+        
+        # 这里插入生成新二维码的代码
+        new_uuid = str(uuid.uuid1())
+        new_url = f"https://login.weixin.qq.com/l/{new_uuid}"
+        qr = qrcode.QRCode(border=1)
+        qr.add_data(new_url)
+        qr.make(fit=True)
+        qr.print_ascii(invert=True)
+        print("新的二维码:")
+        print(new_url)
 
 
 @singleton
